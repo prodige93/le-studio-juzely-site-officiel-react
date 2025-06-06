@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+body {
+  background-color: rgba(0,0,0,.2) transparent;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*  display-flex des container  */
+.page-container {
+  margin: 0 auto;
+  padding: 0 1rem;
+  width: 100%;
+  max-width: 1328px; /* ou autre valeur que tu veux */
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*  header  */
+/*  button de la page home studio juzely  */
+header{
+  padding-top: 15px
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.button-header-studio{
+  display: inline-flex;
+  -moz-box-align: center;
   align-items: center;
+  -moz-box-pack: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: relative;
+  box-sizing: border-box;
+  background-color: transparent;
+  outline: 0px;
+  outline-color: currentColor;
+  outline-style: none;
+  outline-width: 0px;
+  border: 0px;
+  border-top-width: 0px;
+  border-top-style: none;
+  border-top-color: currentColor;
+  border-bottom-width: 0px;
+  border-bottom-style: none;
+  border-bottom-color: currentcolor;
+  border-left-width: 0px;
+  border-left-style: none;
+  border-left-color: currentcolor;
+  border-image-outset: 0;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  margin: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  user-select: none;
+  vertical-align: middle;
+  appearance: none;
+  text-decoration: none;
+  text-decoration-color: currentcolor;
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+  font-family: "Montserrat", "sans-sérif";
+  min-width: 64px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color, box-shadow, border-color, color;
+  transition-duration: 250ms, 250ms, 250ms, 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0s, 0s, 0s, 0s;
+  transition-behavior: normal, normal, normal, normal;
+  border-radius: 30px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  padding: 12px 24px;
+  padding-top: 12px;
+  padding-right: 24px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  text-transform: none;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  color: rgb(105, 105, 116);
+  cursor: pointer;
+}
+.button-header-studio:hover{
+  color: rgb(74, 109, 140);
+  background-color: rgba(105, 146, 182, 0.04);
+}
+.button-header-studio::-moz-focus-inner{
+  border-style: none;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*  parametre font family Monserrat*/
+.button-header-studio{
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: italic;
 }
