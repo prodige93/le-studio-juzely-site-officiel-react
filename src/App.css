@@ -12,10 +12,11 @@ body {
   justify-content: space-between;
 }
 
-/*  header  */
-/*  button de la page home studio juzely  */
+/*  HEADER  */
+/*  BUTTON DE LA PAGE HOME STUDIO JUZELY* /
+/*  button-header-studio  */
 header{
-  padding-top: 15px
+  padding-top: 0 auto;
 }
 .button-header-studio{
   display: inline-flex;
@@ -90,7 +91,6 @@ header{
 .button-header-studio::-moz-focus-inner{
   border-style: none;
 }
-
 /*  parametre font family Monserrat*/
 .button-header-studio{
   font-size: 20px;
@@ -101,7 +101,7 @@ header{
 
 
 
-
+/*  button-header-studio-upgrade  */
 
 .button-header-studio-upgrade{
   display: inline-flex;
@@ -135,7 +135,7 @@ header{
   margin-top: 0px;
   margin-right: 0px;
   margin-bottom: 0px;
-  margin-left: 0px;
+  margin-left: 730px;
   user-select: none;
   vertical-align: middle;
   appearance: none;
@@ -176,7 +176,6 @@ header{
 .button-header-studio-upgrade::-moz-focus-inner{
   border-style: none;
 }
-
 /*  parametre font family Monserrat*/
 .button-header-studio-upgrade{
   font-size: 20px;
