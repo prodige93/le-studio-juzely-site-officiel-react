@@ -183,3 +183,18 @@ header{
   font-weight: 700;
   font-style: italic;
 }
+
+
+/*  CSS ENTIER MY ORDER HOME PAGE*/
+
+.h5-orders{
+  margin-top: 1.35em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;  /* Déjà à 900, c'est le maximum */
+  font-size: 1.2rem;  /* Augmentation de la taille de police */
+  line-height: 2.1rem;
+  letter-spacing: 0.18px;
+  color: rgb(70, 71, 84);
+  -webkit-font-smoothing: antialiased;  /* Améliore le rendu des polices grasses */
+  text-shadow: 0.1px 0.1px 0px rgba(0,0,0,0.2);  /* Ajoute un léger effet d'ombre */
+}

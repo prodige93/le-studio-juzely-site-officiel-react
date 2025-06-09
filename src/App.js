@@ -1,5 +1,6 @@
 import "./App.css";
 import Header from "./components/header/header";
+import Orders from "./components/my.orders.home/my.orders.home";
 
 function App() {
   return (
@@ -8,6 +9,9 @@ function App() {
         <header className="App-header">
           <Header />
         </header> 
+        <div className="App-orders">
+          <Orders />
+        </div>
       </div>
     </div>
   );
