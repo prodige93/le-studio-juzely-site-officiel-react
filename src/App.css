@@ -206,19 +206,14 @@ header{
     margin-top: 16px;
     align-items: center;
 }
-
-
-
 .tab-button.active {
     background-color: #c8c7db00;
 
 }
-
 .tab-button.active:hover {
     background-color: #5a52e6e5;
     border-color: #5a52e6;
 }
-
 .orders-tabs {
     display: flex;
     position: relative;
@@ -228,7 +223,6 @@ header{
     margin-top: 16px;
     width: fit-content;
 }
-
 .orders-tabs::before {
     content: '';
     position: absolute;
@@ -242,19 +236,15 @@ header{
     z-index: 1;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
 .orders-tabs[data-active="1"]::before {
     transform: translateX(0);
 }
-
 .orders-tabs[data-active="2"]::before {
     transform: translateX(100%);
 }
-
 .orders-tabs[data-active="3"]::before {
     transform: translateX(200%);
 }
-
 .tab-button {
     position: relative;
     z-index: 2;
@@ -271,12 +261,140 @@ header{
     text-align: center;
     border-radius: 20px;
 }
-
 .tab-button:hover {
     color: #333;
 }
-
 .tab-button.active {
     color: #6c63ff;
     font-weight: 600;
+}
+
+/*  FIN CSS / ANIMATIONS BOUTTONS */
+
+/*  CSS BOUTONS CHAT / START NEW DESIGN / ADD NEW COLLECTION */
+/*
+.orders-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 24px;
+}
+.orders-tabs {
+  display: flex;
+  background: #e8e8e8;
+  border-radius: 30px;
+  padding: 6px;
+  gap: 4px;
+}
+.tab-button {
+  padding: 12px 24px;
+  border: none;
+  background: transparent;
+  color: #888;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 24px;
+  transition: all 0.2s;
+}
+.tab-button.active {
+  background: #8c8c99;
+  color: #fff;
+  font-weight: 700;
+}
+.orders-actions {
+  display: flex;
+  gap: 12px;
+}
+.action-btn {
+  border-radius: 24px;
+  padding: 10px 22px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  background: #f5f8fa;
+  color: #5a7ca7;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.action-btn.primary {
+  background: #6b93b6;
+  color: #fff;
+}
+.action-btn.outline {
+  background: #fff;
+  border: 1.5px solid #bcd2e6;
+  color: #6b93b6;
+}
+.action-btn.chat {
+  background: #fff;
+  border: none;
+  color: #5a7ca7;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.orders-actions {
+  display: flex;
+  gap: 12px;
+  margin-left: auto;
+}
+*/
+
+
+.tab-frame {
+  background: #fff;
+  border-radius: 32px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  padding: 48px 32px;
+  margin: 32px auto ;
+  max-width: 1200px;
+  min-height: 250px;
+  border: 1px solid #b5c7d3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  color: #6b7a8f;
+}
+
+/*  CSS BUTTONS FRAME ( MAP DRAFT 1 / SAMPLES / BULKS*/
+.button-frame {
+  display: inline-flex;
+  -moz-box-align: center;
+  align-items: center;
+  -moz-box-pack: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  background-color: transparent;
+  outline: 0px;
+  margin: 10px;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  appearance: none;
+  text-decoration: none;
+  font-family: "Poppins", "sans-serif";
+  min-width: 150px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(105, 146, 182, 0.5);
+  color: rgb(105, 146, 182);
+  border-radius: 30px;
+  padding: 12px 24px;
+  text-transform: none;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+}
+.button-frame:focus,
+.button-frame:hover {
+  background: #f3f6f9;
+  border-color: #7ca0c7;
+  color: #5b7fa6;
+}
+.button-frame.active {
+  background: #7ca0c7;
+  color: #fff;
+  border-color: #7ca0c7;
 }
