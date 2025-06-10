@@ -198,3 +198,38 @@ header{
   -webkit-font-smoothing: antialiased;  /* Améliore le rendu des polices grasses */
   text-shadow: 0.1px 0.1px 0px rgba(0,0,0,0.2);  /* Ajoute un léger effet d'ombre */
 }
+.orders-tabs {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+    align-items: center;
+}
+
+.tab-button {
+    padding: 8px 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    background-color: #f5f5f5;
+    color: #666;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    outline: none;
+}
+
+.tab-button:hover {
+    background-color: #e8e8e8;
+    border-color: #d0d0d0;
+}
+
+.tab-button.active {
+    background-color: #6c63ff;
+    color: white;
+    border-color: #6c63ff;
+}
+
+.tab-button.active:hover {
+    background-color: #5a52e6;
+    border-color: #5a52e6;
+}
