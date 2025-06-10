@@ -1,7 +1,7 @@
 import logolab from "./img/logolab.jpg";
 import iconutilisateur from "./img/iconutilisateur.png";
 
-const Header = () => {
+function Header () {
   return (
     <div className="page-container">
       <button className="button-header-studio">
