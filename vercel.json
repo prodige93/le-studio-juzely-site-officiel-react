@@ -7,9 +7,5 @@
                 "disDir": "build"
             }
         }
-    ],
-    "routes": [
-        { "handle": "filesystem", "src": "build/(.*)" },
-        { "src": "/(.*)", "dest": "/index.html" }
     ]
 }
