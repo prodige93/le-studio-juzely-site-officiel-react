@@ -11,8 +11,5 @@
     "routes": [
         { "handle": "filesystem", "src": "build/(.*)" },
         { "src": "/(.*)", "dest": "/index.html" }
-    ],
-    "rewrites": [
-        { "src": "/(.*)", "dest": "/index.html" }
     ]
 }
