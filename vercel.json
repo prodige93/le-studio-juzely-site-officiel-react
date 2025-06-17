@@ -10,6 +10,6 @@
   ],
   "routes": [
     { "handle": "filesystem" },
-    { "src": "/.*", "dest": "/index.html" }
+    { "src": "/size-chart.*", "dest": "/index.html" }
   ]
 }
