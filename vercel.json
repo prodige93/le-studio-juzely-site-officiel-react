@@ -1,15 +1,5 @@
 {
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "build"
-      }
-    }
-  ],
-  "routes": [
-    { "handle": "filesystem" },
-    { "src": "/size-chart.*", "dest": "/index.html" }
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
   ]
 }
