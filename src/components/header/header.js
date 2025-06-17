@@ -1,10 +1,16 @@
 import logolab from "./img/logolab.jpg";
 import iconutilisateur from "./img/iconutilisateur.png";
+import { useNavigate } from "react-router-dom";
 
 function Header () {
+  const navigate = useNavigate();
+  
+  const handleLogoClick = () => {
+    navigate("/");
+  };
   return (
     <div className="page-container">
-      <button className="button-header-studio">
+      <button className="button-header-studio" onClick={handleLogoClick}>
         <img
           src={logolab} // Corrigé ici
           alt="Icon le studio juzely"

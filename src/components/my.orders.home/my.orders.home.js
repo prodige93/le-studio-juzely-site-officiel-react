@@ -12,11 +12,15 @@ function Orders() {
   const handleStartDesignClick = () => {
     navigate("/Size");
   };
+  
+  const handleMyOrdersClick = () => {
+    navigate("/");
+  };
   /** DIV DU BOUTTON DRAFT 1 A ADD NEW COLLECTION */
   return (
     <div className="page-container">
       <div className="h5-orders">
-        <h5>My Orders</h5>
+        <h5 onClick={handleMyOrdersClick} style={{cursor: 'pointer'}}>My Orders</h5>
           <div className="button-bubble">
             <button className="button-chat">Chat</button>
             <button className="button-chat" onClick={handleStartDesignClick}>Start design</button>
