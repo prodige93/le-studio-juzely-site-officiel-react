@@ -4,10 +4,6 @@
 /node_modules
 /.pnp
 .pnp.js
-/src
-/header
-/img
-/my.orders.home
 
 # testing
 /coverage
