@@ -2,7 +2,7 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/header/header";
 import Orders from "./components/my.orders.home/my.orders.home";
-import SizeChart from "./components/size-chart/size.chart";
+import SizeChart from "./components/size.chart/size.chart";
 
 function App() {
   return (
