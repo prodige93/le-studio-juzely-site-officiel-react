@@ -10,7 +10,7 @@ function Orders() {
   };
   
   const handleStartDesignClick = () => {
-    navigate("/size-chart");
+    navigate("/Size");
   };
   /** DIV DU BOUTTON DRAFT 1 A ADD NEW COLLECTION */
   return (

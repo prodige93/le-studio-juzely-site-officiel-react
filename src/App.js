@@ -2,7 +2,7 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/header/header";
 import Orders from "./components/my.orders.home/my.orders.home";
-import SizeChart from "./components/size.chart/size.chart";
+import Size from "./components/size.chart/size.chart";
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
           <div className="App-orders">
             <Routes>
               <Route path="/" element={<Orders />} />
-              <Route path="/size-chart" element={<SizeChart />} />
+              <Route path="/Size" element={<Size />} />
             </Routes>
           </div>
         </div>

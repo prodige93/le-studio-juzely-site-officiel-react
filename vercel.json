@@ -1,5 +1,18 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
-  ]
+    "builds": [
+        {
+            "src": "package.json",
+            "use": "@vercel/static-build",
+            "config": {
+                "disDir": "build"
+            }
+        }
+    ],
+    "routes": [
+        { "handle": "filesystem", "src": "build/(.*)" },
+        { "src": "/(.*)", "dest": "/index.html" }
+    ],
+    "rewrites": [
+        { "src": "/(.*)", "dest": "/$1" }
+    ]
 }
