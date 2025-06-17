@@ -1,353 +1,149 @@
+/* Base Styles */
 body {
   background-color: rgba(0,0,0,.2) transparent;
 }
 
-/*  display-flex des container  */
+/* Layout Containers */
 .page-container {
   margin: 0 auto;
   padding: 0 1rem;
   width: 100%;
-  max-width: 1328px; /* ou autre valeur que tu veux */
+  max-width: 1328px;
   box-sizing: border-box;
   justify-content: space-between;
 }
 
-/*  HEADER  */
-/*  BUTTON DE LA PAGE HOME STUDIO JUZELY* /
-/*  button-header-studio  */
-header{
+/* Header Styles */
+header {
   padding-top: 0 auto;
 }
-.button-header-studio{
+
+/* Header Buttons - Common Styles */
+.button-header-studio,
+.button-header-studio-upgrade {
   display: inline-flex;
-  -moz-box-align: center;
   align-items: center;
-  -moz-box-pack: center;
   justify-content: center;
   position: relative;
   box-sizing: border-box;
   background-color: transparent;
-  outline: 0px;
-  outline-color: currentColor;
-  outline-style: none;
-  outline-width: 0px;
-  border: 0px;
-  border-top-width: 0px;
-  border-top-style: none;
-  border-top-color: currentColor;
-  border-bottom-width: 0px;
-  border-bottom-style: none;
-  border-bottom-color: currentcolor;
-  border-left-width: 0px;
-  border-left-style: none;
-  border-left-color: currentcolor;
-  border-image-outset: 0;
-  border-image-repeat: stretch;
-  border-image-slice: 100%;
-  border-image-source: none;
-  border-image-width: 1;
-  margin: 0px;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
+  outline: 0;
+  border: 0;
+  margin: 0;
   user-select: none;
   vertical-align: middle;
   appearance: none;
   text-decoration: none;
-  text-decoration-color: currentcolor;
-  text-decoration-line: none;
-  text-decoration-style: solid;
-  text-decoration-thickness: auto;
-  font-family: "Montserrat", "sans-sérif";
+  font-family: "Montserrat", sans-serif;
   min-width: 4rem;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: background-color, box-shadow, border-color, color;
-  transition-duration: 250ms, 250ms, 250ms, 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0s, 0s, 0s, 0s;
-  transition-behavior: normal, normal, normal, normal;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+              border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+              color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 1.875rem;
-  border-top-left-radius: 1.875rem;
-  border-top-right-radius: 1.875rem;
-  border-bottom-right-radius: 1.875rem;
-  border-bottom-left-radius: 1.875rem;
   padding: 0.75rem 1.5rem;
-  padding-top: 0.75rem;
-  padding-right: 1.5rem;
-  padding-bottom: 0.75rem;
-  padding-left: 1.5rem;
   text-transform: none;
-  font-weight: 500;
-  font-size: 0.9375rem;
+  font-weight: 700;
+  font-size: 1.25rem;
   line-height: 1.5rem;
   color: rgb(105, 105, 116);
   cursor: pointer;
-}
-.button-header-studio:hover{
-  color: rgb(74, 109, 140);
-  background-color: rgba(105, 146, 182, 0.04);
-}
-.button-header-studio::-moz-focus-inner{
-  border-style: none;
-}
-/*  parametre font family Monserrat*/
-.button-header-studio{
-  font-size: 1.25rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
   font-style: italic;
 }
 
+.button-header-studio:hover,
+.button-header-studio-upgrade:hover {
+  color: rgb(74, 109, 140);
+  background-color: rgba(105, 146, 182, 0.04);
+}
 
+.button-header-studio::-moz-focus-inner,
+.button-header-studio-upgrade::-moz-focus-inner {
+  border-style: none;
+}
 
-/*  button-header-studio-upgrade  */
-
-.button-header-studio-upgrade{
-  display: inline-flex;
-  -moz-box-align: center;
-  align-items: center;
-  -moz-box-pack: center;
-  justify-content: center;
-  position: relative;
-  box-sizing: border-box;
-  background-color: transparent;
-  outline: 0px;
-  outline-color: currentColor;
-  outline-style: none;
-  outline-width: 0px;
-  border: 0px;
-  border-top-width: 0px;
-  border-top-style: none;
-  border-top-color: currentColor;
-  border-bottom-width: 0px;
-  border-bottom-style: none;
-  border-bottom-color: currentcolor;
-  border-left-width: 0px;
-  border-left-style: none;
-  border-left-color: currentcolor;
-  border-image-outset: 0;
-  border-image-repeat: stretch;
-  border-image-slice: 100%;
-  border-image-source: none;
-  border-image-width: 1;
-  margin: 0px;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
+/* Specific positioning for upgrade button */
+.button-header-studio-upgrade {
   margin-left: 45.625rem;
-  user-select: none;
-  vertical-align: middle;
-  appearance: none;
-  text-decoration: none;
-  text-decoration-color: currentcolor;
-  text-decoration-line: none;
-  text-decoration-style: solid;
-  text-decoration-thickness: auto;
-  font-family: "Montserrat", "sans-sérif";
-  min-width: 4rem;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: background-color, box-shadow, border-color, color;
-  transition-duration: 250ms, 250ms, 250ms, 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0s, 0s, 0s, 0s;
-  transition-behavior: normal, normal, normal, normal;
-  border-radius: 1.875rem;
-  border-top-left-radius: 1.875rem;
-  border-top-right-radius: 1.875rem;
-  border-bottom-right-radius: 1.875rem;
-  border-bottom-left-radius: 1.875rem;
-  padding: 0.75rem 1.5rem;
-  padding-top: 0.75rem;
-  padding-right: 1.5rem;
-  padding-bottom: 0.75rem;
-  padding-left: 1.5rem;
-  text-transform: none;
-  font-weight: 500;
-  font-size: 0.9375rem;
-  line-height: 1.5rem;
-  color: rgb(105, 105, 116);
-  cursor: pointer;
-}
-.button-header-studio-upgrade:hover{
-  color: rgb(74, 109, 140);
-  background-color: rgba(105, 146, 182, 0.04);
-}
-.button-header-studio-upgrade::-moz-focus-inner{
-  border-style: none;
-}
-/*  parametre font family Monserrat*/
-.button-header-studio-upgrade{
-  font-size: 1.25rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-style: italic;
 }
 
-
-/*  CSS ENTIER MY ORDER HOME PAGE */
-/*  BOUTON DRAFTS SAMPLES BULKS */
-
-.h5-orders{
+/* My Orders Section Styles */
+.h5-orders {
   margin-top: 1.35em;
   font-family: "Montserrat", sans-serif;
-  font-weight: 900;  /* Déjà à 900, c'est le maximum */
-  font-size: 1.2rem;  /* Augmentation de la taille de police */
+  font-weight: 900;
+  font-size: 1.2rem;
   line-height: 2.1rem;
   letter-spacing: 0.18px;
   color: rgb(70, 71, 84);
-  -webkit-font-smoothing: antialiased;  /* Améliore le rendu des polices grasses */
-  text-shadow: 0.1px 0.1px 0px rgba(0,0,0,0.2);  /* Ajoute un léger effet d'ombre */
-}
-/*  CSS / ANIMATIONS BOUTTONS */
-.orders-tabs {
-    display: flex;
-    gap: 8px;
-    margin-top: 16px;
-    align-items: center;
-}
-.tab-button.active {
-    background-color: #c8c7db00;
-
-}
-.tab-button.active:hover {
-    background-color: #5a52e6e5;
-    border-color: #5a52e6;
-}
-.orders-tabs {
-    display: flex;
-    position: relative;
-    background-color: #f0f0f0;
-    border-radius: 25px;
-    padding: 4px;
-    margin-top: 16px;
-    width: fit-content;
-}
-.orders-tabs::before {
-    content: '';
-    position: absolute;
-    top: 4px;
-    left: 4px;
-    height: calc(100% - 8px);
-    width: calc(33.33% - 8px);
-    background-color: white;
-    border-radius: 20px;
-    transition: transform 0.3s ease;
-    z-index: 1;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-.orders-tabs[data-active="1"]::before {
-    transform: translateX(0);
-}
-.orders-tabs[data-active="2"]::before {
-    transform: translateX(100%);
-}
-.orders-tabs[data-active="3"]::before {
-    transform: translateX(200%);
-}
-.tab-button {
-    position: relative;
-    z-index: 2;
-    padding: 12px 20px;
-    border: none;
-    background: transparent;
-    color: #666;
-    font-size: 14px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: color 0.3s ease;
-    outline: none;
-    flex: 1;
-    text-align: center;
-    border-radius: 20px;
-}
-.tab-button:hover {
-    color: #333;
-}
-.tab-button.active {
-    color: #6c63ff;
-    font-weight: 600;
-}
-
-/*  FIN CSS / ANIMATIONS BOUTTONS */
-
-/*  CSS BOUTONS CHAT / START NEW DESIGN / ADD NEW COLLECTION */
-/*
-.orders-header {
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 0.1px 0.1px 0px rgba(0,0,0,0.2);
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  margin-top: 24px;
+  height: 2.1rem;
 }
-.orders-tabs {
+/* Button Bubble - Container for Chat, Start Design, Start New Collection buttons */
+.button-bubble {
   display: flex;
-  background: #e8e8e8;
+  align-items: center;
+  background: #f5f5f5;
   border-radius: 30px;
-  padding: 6px;
-  gap: 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  padding: 0 8px;
+  height: 2.1rem; /* Match the h5 height */
 }
-.tab-button {
-  padding: 12px 24px;
-  border: none;
-  background: transparent;
-  color: #888;
-  font-size: 14px;
-  font-weight: 500;
-  border-radius: 24px;
-  transition: all 0.2s;
-}
-.tab-button.active {
-  background: #8c8c99;
-  color: #fff;
-  font-weight: 700;
-}
-.orders-actions {
-  display: flex;
-  gap: 12px;
-}
-.action-btn {
-  border-radius: 24px;
-  padding: 10px 22px;
-  font-size: 14px;
-  font-weight: 500;
-  border: none;
-  background: #f5f8fa;
-  color: #5a7ca7;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-.action-btn.primary {
-  background: #6b93b6;
-  color: #fff;
-}
-.action-btn.outline {
-  background: #fff;
-  border: 1.5px solid #bcd2e6;
-  color: #6b93b6;
-}
-.action-btn.chat {
-  background: #fff;
-  border: none;
-  color: #5a7ca7;
+
+/* Chat Button Styles */
+.button-chat {
   display: flex;
   align-items: center;
-  gap: 6px;
+  justify-content: center;
+  padding: 0 20px;
+  height: 2.1rem;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 20px;
+  border: 1.5px solid #b5c7d3;
+  background: #fff;
+  color: #7ca0c7;
+  transition: color 0.2s, background 0.2s, border 0.2s;
+  cursor: pointer;
+  min-width: 140px;
+  outline: none;
+  box-shadow: none;
 }
-.orders-actions {
+
+.button-chat:active {
+  background: #e0e0ff;
+  color: #4b3fd6;
+}
+
+.button-chat:not(:last-child) {
+  margin-right: 12px;
+}
+
+.button-chat:focus,
+.button-chat:hover {
+  background: #f3f6f9;
+  border-color: #7ca0c7;
+  color: #5b7fa6;
+}
+
+/* Button Row Layout */
+.button-row {
   display: flex;
-  gap: 12px;
-  margin-left: auto;
+  flex-direction: row;
+  gap: 16px;
 }
-*/
 
-
+/* Tab Frame Container */
 .tab-frame {
   background: #fff;
   border-radius: 32px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.06);
   padding: 48px 32px;
-  margin: 32px auto ;
+  margin: 32px auto;
   max-width: 1200px;
   min-height: 250px;
   border: 1px solid #b5c7d3;
@@ -358,26 +154,99 @@ header{
   color: #6b7a8f;
 }
 
-/*  CSS BUTTONS FRAME ( MAP DRAFT 1 / SAMPLES / BULKS*/
+/* Orders Tabs Navigation */
+.orders-tabs {
+  display: flex;
+  position: relative;
+  background-color: #f0f0f0;
+  border-radius: 25px;
+  padding: 4px;
+  margin-top: 16px;
+  width: fit-content;
+  gap: 8px;
+  align-items: center;
+}
+
+/* Active Tab Indicator */
+.orders-tabs::before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  height: calc(100% - 8px);
+  width: calc(33.33% - 8px);
+  background-color: white;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+  z-index: 1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Tab Position States */
+.orders-tabs[data-active="1"]::before {
+  transform: translateX(0);
+}
+
+.orders-tabs[data-active="2"]::before {
+  transform: translateX(100%);
+}
+
+.orders-tabs[data-active="3"]::before {
+  transform: translateX(200%);
+}
+
+/* Tab Button Styles */
+.tab-button {
+  position: relative;
+  z-index: 2;
+  padding: 12px 20px;
+  border: none;
+  background: transparent;
+  color: #666;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  outline: none;
+  flex: 1;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.tab-button:hover {
+  color: #333;
+}
+
+.tab-button.active {
+  color: #6c63ff;
+  font-weight: 600;
+}
+
+.tab-button.active:hover {
+  background-color: #5a52e6e5;
+  border-color: #5a52e6;
+}
+/* Frame Button Styles */
 .button-frame {
   display: inline-flex;
-  -moz-box-align: center;
   align-items: center;
-  -moz-box-pack: center;
   justify-content: center;
   position: relative;
   box-sizing: border-box;
   background-color: transparent;
-  outline: 0px;
+  outline: 0;
   margin: 10px;
   cursor: pointer;
   user-select: none;
   vertical-align: middle;
   appearance: none;
   text-decoration: none;
-  font-family: "Poppins", "sans-serif";
+  font-family: "Poppins", sans-serif;
   min-width: 150px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+              border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+              color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid rgba(105, 146, 182, 0.5);
   color: rgb(105, 146, 182);
   border-radius: 30px;
@@ -387,6 +256,7 @@ header{
   font-size: 15px;
   line-height: 24px;
 }
+
 .button-frame:focus,
 .button-frame:hover {
   background: #f3f6f9;
